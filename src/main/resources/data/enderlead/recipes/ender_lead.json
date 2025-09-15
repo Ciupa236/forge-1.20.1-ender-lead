@@ -7,6 +7,12 @@
     },
     {
       "item": "minecraft:nether_star"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:ender_pearl"
     }
   ],
   "result": {

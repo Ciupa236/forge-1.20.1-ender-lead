@@ -17,6 +17,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -25,11 +26,16 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class EnderLeadItem extends Item {
 
     public EnderLeadItem() {
-        super(new Item.Properties().stacksTo(1).durability(15));
+        super(new Item.Properties().stacksTo(1).durability(10));
     }
 
     @Override
     public boolean isEnchantable(ItemStack stack) {
+        return true;
+    }
+
+    @Override
+    public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
         return false;
     }
 

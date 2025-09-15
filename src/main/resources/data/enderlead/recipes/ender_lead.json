@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:lead"
+    }
+  ],
+  "result": {
+    "item": "enderlead:ender_lead",
+    "count": 1
+  }
+}

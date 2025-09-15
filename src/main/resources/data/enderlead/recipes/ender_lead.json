@@ -4,6 +4,9 @@
   "ingredients": [
     {
       "item": "minecraft:lead"
+    },
+    {
+      "item": "minecraft:nether_star"
     }
   ],
   "result": {

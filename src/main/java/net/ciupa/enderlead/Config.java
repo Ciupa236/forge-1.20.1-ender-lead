@@ -25,11 +25,11 @@ public class Config {
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent.Loading event) {
-        BlacklistWriter.saveBlacklist(ENTITY_STRINGS.get());
+
     }
 
     @SubscribeEvent
     static void onReload(final ModConfigEvent.Reloading event) {
-        BlacklistWriter.saveBlacklist(ENTITY_STRINGS.get());
+
     }
 }

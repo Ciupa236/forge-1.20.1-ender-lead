@@ -48,11 +48,11 @@ public class EnderLeadItem extends Item {
         return super.onLeftClickEntity(stack, player, entity);
     }
 
-    // Helper method to check config blacklist
     private boolean isBlacklisted(Entity entity) {
         String id = ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString();
         return Config.ENTITY_STRINGS.get().contains(id);
     }
+
     @Override
     public InteractionResult useOn(UseOnContext ctx) {
         CompoundTag tag = ctx.getItemInHand().getOrCreateTagElement("entity_data");
